@@ -302,7 +302,7 @@ footer{
     flex-direction: row;
     padding: 20px 60px;
     background-color: #0a9396;
-    /* align-items: center; */
+    align-items: center;
     color: white;
     height: auto;
 }
@@ -331,7 +331,6 @@ footer{
     flex-direction: row;
     padding: 20px 60px;
     justify-content: space-between; 
-    align-items: center;
     gap: 40px;
     margin: 50px 0;
 }
@@ -345,4 +344,5 @@ input, textarea{
 }
 .map h1{
     margin-bottom: 50px;
+    text-align: center;
 }
