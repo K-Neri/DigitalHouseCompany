@@ -270,9 +270,8 @@ footer{
 
 }
 
-.middle{
-    width: 50%;
-    border-right: 1px solid black;
+.business_info{
+    width: 100%;
 }
 
 .links{
@@ -299,11 +298,16 @@ footer{
 }
 .title{
     margin-bottom: 10px;
+    font-size: 2rem;
 }
-
-.bottom-right small{
+.middle{
+    width: 100%;
+}
+.middle small{
     display: block;
 }
+
+/* CONTACT STYLE */
 
 .page_info{
     display: flex;
@@ -353,4 +357,27 @@ input, textarea{
 .map h1{
     margin-bottom: 50px;
     text-align: center;
+}
+.copyright{
+    background-color: #0a224c;
+    color: white;
+    padding: 30px ;
+    font-weight: bold;
+}
+
+.horaire{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    justify-content: center;
+}
+
+.jours ul, .heures ul {
+    list-style-type: none;
+}
+
+.jours ul li:nth-child(1), .heures ul li:nth-child(1){
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
