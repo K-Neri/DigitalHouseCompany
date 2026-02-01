@@ -3,6 +3,7 @@
     --span: #ff6100;
     --title:#0a224c;
     --menu-hover:#0075e3;
+    --contactbackgrounccolor: #0a9396
 }
 
 * {
@@ -20,10 +21,13 @@ body{
 header {
     display: flex;
     flex-direction: row;
-    background: rgba(177, 177, 177, 0.281);
+    background-color: rgb(255, 254, 254);
     justify-content: space-between;
     padding: 10px 20px;
     align-items: center;
+    position: sticky;
+    top:0;
+    z-index: 1;
 }
 
 
@@ -274,7 +278,7 @@ footer{
 .links{
     display: flex;
     flex-direction: row;
-    gap: 80px;
+    /* gap: 50px; */
 }
 
 .links ul{
@@ -289,6 +293,10 @@ footer{
 .links ul li a:hover{
     text-decoration: underline;
 }
+
+.produits, .entreprise{
+    width: 100%;
+}
 .title{
     margin-bottom: 10px;
 }
@@ -301,7 +309,7 @@ footer{
     display: flex;
     flex-direction: row;
     padding: 20px 60px;
-    background-color: #0a9396;
+    background-color: var(--contactbackgrounccolor);
     align-items: center;
     color: white;
     height: auto;
