@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -7,13 +7,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="shortcut icon" href="images/company_logo.png" type="image/x-icon">
 
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=contacts_product" />
+    <link rel="shortcut icon" href="images/company_logo.png" type="image/x-icon">
+    
     <title>Digital House Company</title>
 </head>
 
@@ -28,49 +27,26 @@
         <nav>
             <ul>
                 <li><a href="index.html">Webinaires</a></li>
-                <li><a href="experts.html">Experts</a></li>
-                <li><a href="ressources.html">Ressources</a></li>
+                <li><a href="features.html">Features</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><button class="btn btn-warning inscription">S'inscrire</button></li>
+                <li><button class="btn btn-success inscription">S'inscrire</button></li>
             </ul>
 
         </nav>
     </header>
 
-    <section id="carousel">
-        <h2>Carousel Example</h2>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
+    <section id="hero">
+        <div class="gauche">
+            <h1>Votre meilleure proposition de valeur</h1>
+            <p>
+                Des webiniaires pratiques conçus pour aider les développeurs à comprendre, adopter et appliquer
+                l'intelligences artificielle dans des projets logiciels concrets
+            </p>
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="la.jpg" alt="Los Angeles" style="width:100%;">
-                </div>
-
-                <div class="item">
-                    <img src="chicago.jpg" alt="Chicago" style="width:100%;">
-                </div>
-
-                <div class="item">
-                    <img src="ny.jpg" alt="New york" style="width:100%;">
-                </div>
-            </div>
-
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <button class=" btn btn-primary commencer">commencer gratuitement</button>
+        </div>
+        <div class="droite">
+            <img src="images/illustartion_IA.png" alt=" illustration ou image liée à la téchnologie ou à l'IA ">
         </div>
     </section>
 
@@ -223,14 +199,12 @@
         </div>
     </section>
 
-    <footer>
-        <!-- <div class="logo">
-            <a href="index.html"><img src="images/company_logo.png" alt="Company logo"></a>
-        </div> -->
+    <footer class="footer1" >
+
 
         <div class="contact_form">
             <form>
-                <h1 style="text-align: center;margin-bottom: 40px;">CONTACTER NOUS</h1>
+                <h3 style="text-align: center;margin-bottom: 30px;font-weight: bold;">CONTACTER NOUS</h3>
                 <label for="nom">Nom<sup>*</sup></label><br>
                 <input type="text" name="nom" id="" required placeholder="tape votre Nom"> <br> <br>
 
@@ -263,10 +237,9 @@
 
                     <ul>
                         <li class="title"><b>Produits</b></li>
-                        <li><a href="#">Webinaires</a>
-                            <a href="#">Consulting</a>
-                            <a href="#">Formation</a>
-                            <a href="#">Ressources</a>
+                        <li><a href="index.html">Webinaires</a>
+                            <a href="features.html">Features</a>
+                            <a href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -289,7 +262,8 @@
         <div class="business_info">
 
             <h3 style="font-weight: bold; padding-left: 30px;">Présentation</h3>
-            <p style="padding-left: 30px;">Digital House Company accompagne les Développeurs et équipes techniques dans l'adoption concrète de
+            <p style="padding-left: 30px;">Digital House Company accompagne les Développeurs et équipes techniques dans
+                l'adoption concrète de
                 l'intelligence artificielle
             </p>
 
@@ -321,6 +295,12 @@
                         <li style="color: red;">Fermé</li>
                     </ul>
                 </div>
+            </div>
+            <div class="phone_mail">
+                <p><span><b>E-mail: </b></span>
+                <a href="mailto:mailto:info@digitalhousecompany.com">info@digitalhousecompany.com</a></p>
+
+                <p><span><b>contacter: </b></span><a href="tel:+32470123456"> +32 470 12 34 56</a></p>
             </div>
         </div>
     </footer>

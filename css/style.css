@@ -2,26 +2,27 @@
     --font-color: #0a1551;
     --span: #ff6100;
     --title:#0a224c;
-    --menu-hover:#0075e3;
-    --contactbackgrounccolor: #0a9396
+    --menu-hover:#247e69;
+    --main-color: #235146;
+    --second-color: #FAF7EE;
 }
 
 * {
     margin: 0;
     padding: 0;
 }
-h1, h2,h3{
+h1, h2,h3,h4{
     font-weight: bold;
-    color: var(--title);
+    color: var(--main-color);
 }
 
 body{
-    color: var(--font-color);
+    background-color: var(--second-color);
 }
 header {
     display: flex;
     flex-direction: row;
-    background-color: rgb(255, 254, 254);
+    background-color: var(--second-color);
     justify-content: space-between;
     padding: 10px 20px;
     align-items: center;
@@ -46,7 +47,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: var(--font-color);
+    color: var(--main-color);
     font-weight: bold;
     transition: 0.5s;
     padding: 5px 10px;
@@ -89,7 +90,7 @@ nav ul li a:hover {
 }
 
 #confiances {
-    background-color: rgba(211, 211, 211, 0.422);
+    background-color: var(--second-color);
     padding: 50px;
 }
 
@@ -123,7 +124,7 @@ nav ul li a:hover {
     display: flex;
     gap: 50px;
     flex-direction: row;
-    background-color: rgb(36, 35, 35);
+    background-color: var(--main-color);
     color: white;
 }
 
@@ -189,7 +190,7 @@ nav ul li a:hover {
 
 #top{
     height: 400px;
-    background-color: beige;
+    background-color: var(--second-color);
     display: flex;
     flex-direction: row;
 }
@@ -204,7 +205,7 @@ nav ul li a:hover {
 
 .top-gauche{
     height: 100%;
-    background-color: rgb(36, 35, 35);
+    background-color: var(--main-color);
     color: white;
     width: 60%;
     padding: 30px 50px;
@@ -225,7 +226,7 @@ nav ul li a:hover {
     padding: 40px 80px;
 }
 .card a{
-    color: black;
+    color: var(--main-color);
 }
 
 #témoignage{
@@ -248,7 +249,7 @@ nav ul li a:hover {
     font-size: 1.5rem;
 }
 #call_to_action{
-    background-color: lightgray;
+    background-color: var(--second-color);
     padding: 80px 0px;
 }
 #action_final{
@@ -260,8 +261,11 @@ nav ul li a:hover {
     margin-bottom: 30px;
     font-weight: bold;
 }
-
-
+.footer1{
+    background-color: var(--main-color);
+    color: white;
+}
+/* footer 2 for copy right */
 footer{
     display:flex;
     flex-direction:row;
@@ -277,7 +281,6 @@ footer{
 .links{
     display: flex;
     flex-direction: row;
-    /* gap: 50px; */
 }
 
 .links ul{
@@ -286,7 +289,8 @@ footer{
 .links ul li a {
     display: block;
     text-decoration: none;
-    color:black;
+    color: var(--main-color);
+    font-weight: bold;
 }
 
 .links ul li a:hover{
@@ -307,13 +311,61 @@ footer{
     display: block;
 }
 
+.phone_mail{
+    padding-left: 30px;
+}
+
+.phone_mail a{
+    text-decoration: none;
+    
+}
+.phone_mail a:hover{
+    text-decoration: underline;
+    
+}
+
+/* FEATURES STYLE */
+
+.description{
+    width: 100%;
+}
+.description h1{
+    margin-bottom: 40px;
+}
+.info_img, .info_img img{
+    width: 100%;
+}
+
+.features1, .features2, .features3{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 80px 50px ;
+    background-color: var(--second-color);
+}
+
+.card_left, .card_right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.card_left h1, .card_right h1{
+    margin-bottom: 40px;
+}
+.card_right img, .card_left img{
+    width: 100%;
+    height: auto;
+}
+
 /* CONTACT STYLE */
 
 .page_info{
     display: flex;
     flex-direction: row;
     padding: 20px 60px;
-    background-color: var(--contactbackgrounccolor);
+    background-color: var(--main-color);
     align-items: center;
     color: white;
     height: auto;
@@ -341,25 +393,26 @@ footer{
 .form-map{
     display: flex;
     flex-direction: row;
-    padding: 20px 60px;
+    padding: 50px 60px;
     justify-content: space-between; 
     gap: 40px;
-    margin: 50px 0;
+    background-color: var(--second-color);
 }
 
 input, textarea{
     width: 100%;
     outline: none;
-    border: 1px solid black;
+    border: 1px solid var(--main-color);
     padding: 5px 20px;
     border-radius: 5px;
+    background-color: var(--second-color);
 }
 .map h1{
     margin-bottom: 50px;
     text-align: center;
 }
 .copyright{
-    background-color: #0a224c;
+    background-color:var(--menu-hover);
     color: white;
     padding: 30px ;
     font-weight: bold;
@@ -381,3 +434,4 @@ input, textarea{
     text-transform: uppercase;
     font-weight: bold;
 }
+
