@@ -5,24 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=contacts_product" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 
     <link rel="shortcut icon" href="images/company_logo.png" type="image/x-icon">
     <title>features</title>
 </head>
 
 <body>
-    <header>
+    <section class="topheader">
 
         <div class="logo">
             <a href="index.html"><img src="images/company_logo.png" alt="Company logo"></a>
         </div>
+        <!-- le button hambuger qui sera affiche sur les dimensions de l'ecran d'un mobile -->
+        <div id="mobile-nav-btn">
+            <span class="material-symbols-outlined">menu</span>
+        </div>
 
-        <nav>
+        <!-- Menu principale qui s'affiche  sur le telephone -->
+        <nav class="sidenavbar">
+            <ul>
+                <li><a href="index.html">Webinaires</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button class="btn btn-success inscription">S'inscrire</button></li>
+            </ul>
+        </nav>
+
+        <!-- main navbar -->
+
+        <nav class="navbar">
             <ul>
                 <li><a href="index.html">Webinaires</a></li>
                 <li><a href="features.html">Features</a></li>
@@ -31,7 +53,8 @@
             </ul>
 
         </nav>
-    </header>
+    </section>
+
     <section class="page_info">
         <div class="description">
             <h1>Quels sont les avantages de L'IA dans votre travail quotidien </h1>
@@ -57,7 +80,7 @@
         </div>
 
         <div class="card_right">
-            <h1>Machine Learning</h1>
+            <h1 style="color:#235146;font-weight: bold;">Machine Learning</h1>
             <p>
                 Machine Learning (ML) est un domaine d'étude qui se concentre sur le développement
                 d'algorithmes et de modèles permettant aux ordinateurs d'apprendre et de prendre des décisions sans
@@ -76,7 +99,7 @@
     <section class="features2">
 
         <div class="card_left">
-            <h1>Natural Language Processing</h1>
+            <h1 style="color:#235146;font-weight: bold;">Natural Language Processing</h1>
             <p>
                 Le traitement automatique du langage naturel, est un sous-domaine de l'intelligence artificielle
                 (IA), de l'informatique et de la linguistique qui permet aux ordinateurs de comprendre, d'interpréter et
@@ -107,14 +130,14 @@
         </div>
 
         <div class="card_right">
-            <h1>Recommendation Systems</h1>
+            <h1 style="color:#235146;font-weight: bold;">Recommendation Systems</h1>
             <p>
                 Les systèmes de recommandation sont des outils qui suggèrent des articles aux utilisateurs en fonction
                 de leur comportement, de leurs préférences ou de leurs interactions passées. Ils aident les utilisateurs
                 à trouver des produits, des films, des chansons ou du contenu pertinents sans avoir à les rechercher
                 manuellement. Ils sont largement utilisés sur des plateformes comme YouTube, Amazon et Netflix.
             </p>
-            
+
             <ul>
                 <li>Suggestion automatique d'articles</li>
                 <li>Utilisation du comportement et des habitudes des utilisateurs</li>
@@ -128,12 +151,12 @@
 
     </section>
 
-    <footer class="footer1">
+    <section class="footer1">
 
 
         <div class="contact_form">
             <form>
-                <h3 style="text-align: center;margin-bottom: 30px;font-weight: bold;">CONTACTER NOUS</h3>
+                <h3 style="text-align: center;margin-bottom: 30px;font-weight: bold;">Contacter Nous</h3>
                 <label for="nom">Nom<sup>*</sup></label><br>
                 <input type="text" name="nom" id="" required placeholder="tape votre Nom"> <br> <br>
 
@@ -161,11 +184,12 @@
 
 
         <div class="middle">
+
             <div class="links">
                 <div class="produits">
 
                     <ul>
-                        <li class="title"><b>Produits</b></li>
+                        <h3 class="title">Produits</h3>
                         <li><a href="index.html">Webinaires</a>
                             <a href="features.html">Features</a>
                             <a href="contact.html">Contact</a>
@@ -176,7 +200,7 @@
                 <div class="entreprise">
 
                     <ul>
-                        <li class="title"><b>Entreprises</b></li>
+                        <h3 class="title">Entreprises</h3>
                         <li><a href="#">à Propos</a>
                             <a href="#">Carrières</a>
                             <a href="#">Contact</a>
@@ -190,13 +214,13 @@
 
         <div class="business_info">
 
-            <h3 style="font-weight: bold; padding-left: 30px;">Présentation</h3>
-            <p style="padding-left: 30px;">Digital House Company accompagne les Développeurs et équipes techniques dans
+            <h3><b>Présentation</b></h3>
+            <p>Digital House Company accompagne les Développeurs et équipes techniques dans
                 l'adoption concrète de
                 l'intelligence artificielle
             </p>
 
-            <h3 style="font-weight: bold;text-align: center;">NOS HORAIRES</h3>
+            <h3 style="font-weight: bold;">NOS HORAIRES</h3>
             <div class="horaire">
 
                 <div class="jours">
@@ -233,11 +257,23 @@
                 <p><span><b>contacter: </b></span><a href="tel:+32470123456"> +32 470 12 34 56</a></p>
             </div>
         </div>
-    </footer>
+    </section>
 
     <footer class="copyright">
         <p>&copy 2010 - 2020 Privacy - Terms</p>
     </footer>
+
+    <script src="https://kit.fontawesome.com/a795ebd712.js" crossorigin="anonymous"></script>
+    <script>
+        const navbtn = document.getElementById("mobile-nav-btn");
+        const sidenavbar = document.querySelector(".sidenavbar");
+
+        navbtn.addEventListener('click', () => {
+            sidenavbar.classList.toggle('active');
+        })
+
+
+    </script>
 </body>
 
 </html>
