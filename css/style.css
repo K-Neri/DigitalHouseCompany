@@ -489,15 +489,15 @@ textarea {
     font-weight: bold;
 }
 
-@media(min-width: 1536px)
+/* @media(min-width: 1536px)
 {
       body{
-        background-color: red;
+        
       }
-}
+} */
 
 /* responsive  for mobile */
-@media (max-width: 600px) {
+@media (max-width:1200px) {
 
     .topheader {
         display: flex;
